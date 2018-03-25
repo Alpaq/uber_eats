@@ -4,14 +4,468 @@
 <head>
     <meta charset="UTF-8">
     <title>Uber Eats</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
 
-<body>
-    UBER EATS ASAP to Sign In Register Search for restaurant or cuisine Moscow Restaurants
-    <footer>
-        UBER EATS About UberEats Become a Delivery Partner Become a Restaurant Partner See all cities Pricing Help FAQs
-    </footer>
+    <style type="text/css">
+        header {
+            box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+        }
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            margin-top: 16px;
+        
+        }
+        .searchBar {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 32px;
+        }
+        .restaurantName {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .cuisine {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        .minutes {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 21px;
+            padding-bottom: 20px;
+            margin-bottom: 16px;
+        }
+        footer {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        
+        .footerA {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
 
-</body>
+        .footerD {
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+        }
+
+        select {
+            width: 50%;
+            padding: 16px 10px;
+            border: none;
+            background-color: #3B3B3B;
+        }
+
+
+        .container {
+            width: 976px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .col-xs-1,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12,
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12 {
+            padding-left: 8px;
+            padding-right: 8px;
+            box-sizing: border-box;
+        }
+
+
+        .col-xs-1 {
+            flex-basis: 8.3333%;
+        }
+
+        .col-xs-2 {
+            flex-basis: 16.6666%;
+        }
+
+        .col-xs-3 {
+            flex-basis: 24.9999%
+        }
+
+        .col-xs-4 {
+            flex-basis: 33.3333%;
+        }
+
+        .col-xs-5 {
+            flex-basis: 41.6665%;
+        }
+
+        .col-xs-6 {
+            flex-basis: 49.9998%;
+        }
+
+        .col-xs-7 {
+            flex-basis: 58.3331%;
+        }
+
+        .col-xs-8 {
+            flex-basis: 66.6664%;
+        }
+
+        .col-xs-9 {
+            flex-basis: 74.9997%;
+        }
+
+        .col-xs-10 {
+            flex-basis: 83.3333%;
+        }
+
+        .col-xs-11 {
+            flex-basis: 91.6663%;
+        }
+
+        .col-xs-12 {
+            flex-basis: 100%;
+        }
+
+
+        @media (min-width: 768px) {
+            .col-md-1 {
+                flex-basis: 8.3333%;
+            }
+
+            .col-md-2 {
+                flex-basis: 16.6666%;
+            }
+
+            .col-md-3 {
+                flex-basis: 24.9999%
+            }
+
+            .col-md-4 {
+                flex-basis: 33.3333%;
+            }
+
+            .col-md-5 {
+                flex-basis: 41.6665%;
+            }
+
+            .col-md-6 {
+                flex-basis: 49.9998%;
+            }
+
+            .col-md-7 {
+                flex-basis: 58.3331%;
+            }
+
+            .col-md-8 {
+                flex-basis: 66.6664%;
+            }
+
+            .col-md-9 {
+                flex-basis: 74.9997%;
+            }
+
+            .col-md-10 {
+                flex-basis: 83.3333%;
+            }
+
+            .col-md-11 {
+                flex-basis: 91.6663%;
+            }
+
+            .col-md-12 {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-lg-1 {
+                flex-basis: 8.3333%;
+            }
+
+            .col-lg-2 {
+                flex-basis: 16.6666%;
+            }
+
+            .col-lg-3 {
+                flex-basis: 24.9999%
+            }
+
+            .col-lg-4 {
+                flex-basis: 33.3333%;
+            }
+
+            .col-lg-5 {
+                flex-basis: 41.6665%;
+            }
+
+            .col-lg-6 {
+                flex-basis: 49.9998%;
+            }
+
+            .col-lg-7 {
+                flex-basis: 58.3331%;
+            }
+
+            .col-lg-8 {
+                flex-basis: 66.6664%;
+            }
+
+            .col-lg-9 {
+                flex-basis: 74.9997%;
+            }
+
+            .col-lg-10 {
+                flex-basis: 83.3333%;
+            }
+
+            .col-lg-11 {
+                flex-basis: 91.6663%;
+            }
+
+            .col-lg-12 {
+                flex-basis: 100%;
+            }
+        }
+
+        /*body {
+            color: orange;
+        }
+
+
+        /* @media (min-width: 768px) {
+            body {
+                color: red;
+            }
+        }
+
+        @media (min-width: 992px) {
+            body {
+                color: green;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                color: blue;
+            }
+        } */
+
+        /* @media only screen and (max-width: 768px) { */
+
+        /* For mobile phones: */
+
+        /* [class*="col-lg-"] {no
+                width: 100%;
+            }
+        } */
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            line-height: 34px;
+            text-align: left;
+            padding-top: 56px;
+            padding-bottom: 16px;
+        }
+    </style>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-5 col-md-2 col-lg-2">
+                        UBER EATS
+                    </div>
+                    <div class="col-xs-1 col-md-1 col-lg-1">
+                    </div>
+                    <div class="col-xs-3 col-md-1 col-lg-1">
+                        <button type="button">ASAP</button>
+                    </div>
+                    <div class="col-xs-9 col-md-4 col-lg-4">
+                        ul. Bolshaya Dmitrovka, 22
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-xs-3 col-md-2 col-lg-1">
+                        <button type="button">Sign In</button>
+                    </div>
+                    <div class="col-xs-3 col-md-1 col-lg-1">
+                        <button type="button">Register</button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8 col-md-4 col-lg-4">
+                    <div class="searchBar">
+                        <input type="text" name="search" value="Search for restaurant or cuisine">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8 col-md-4 col-lg-3">
+                    <h1>Moscow Restaurants</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/mcdonalds.png">
+                    <h2 class="restaurantName">Макдоналдс &ndash; Газетный</h2>
+                    <h3 class="cuisine">&#8381&#8381 &bull; Бургеры</h3>
+                    <h4 class="minutes">25-35 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/DimSumaCo.png">
+                    <h2 class="restaurantName">DimSum &#38 Co &ndash; ЦДМ</h2>
+                    <h3 class="cuisine">&#8381 &bull; Японская &bull; Китайская &bull; Азиятская</h3>
+                    <h4 class="minutes">40-50 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/DvizhOK.png">
+                    <h2 class="restaurantName">ДвижОК &ndash; Манежная</h2>
+                    <h3 class="cuisine">&#8381 &bull; Американская &bull; Европейская</h3>
+                    <h4 class="minutes">35-45 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/NHA.png">
+                    <h2 class="restaurantName">НЯ &ndash; NHA</h2>
+                    <h3 class="cuisine">&#8381 &bull; Вьетнаиская</h3>
+                    <h4 class="minutes">30-40 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/TochkaDzy.png">
+                    <h2 class="restaurantName">Точка Дзы &ndash; Цветной</h2>
+                    <h3 class="cuisine">&#8381&#8381 &bull; Вьетнаиская</h3>
+                    <h4 class="minutes">40-50 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/Cinnabon.png">
+                    <h2 class="restaurantName">Cinnabon</h2>
+                    <h3 class="cuisine">&#8381 &bull; Выпечка &bull; Десерты &bull; Капкейки</h3>
+                    <h4 class="minutes">25-35 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/Pizzalove.png">
+                    <h2 class="restaurantName">PIZZALOVE</h2>
+                    <h3 class="cuisine">&#8381&#8381 &bull; Пицца</h3>
+                    <h4 class="minutes">15-25 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/ZyuKafe.png">
+                    <h2 class="restaurantName">Zю кафе &ndash; Тверская</h2>
+                    <h3 class="cuisine">&#8381&#8381 &bull; Японская</h3>
+                    <h4 class="minutes">25-35 Min</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <img src="static/images/barbqcafe.png">
+                    <h2 class="restaurantName">Bar BQ Cafe &ndash; Манежная</h2>
+                    <h3 class="cuisine">&#8381&#8381 &bull; Европейская</h3>
+                    <h4 class="minutes">30-40 Min</h4>
+                </div>
+            </div>
+
+            <footer>
+                <div style="background-color: #262626">
+
+                    <div class="footerA">
+                        UBER EATS
+
+                    </div>
+                    <div class="footerB">
+                        <div class="col-xs-8 col-md-3 col-lg-3 ">
+                            <select>
+                                <option value="english ">English</option>
+                            </select>
+
+                            <div class="firstcolumn">
+                                <p>About UberEats</p>
+                                <p>Become a Delivery Partner</p>
+                                <p>Become a Restaurant Partner</p>
+                            </div>
+                            <div class="secondcolumn">
+                                <p>See all cities</p>
+                                <p>Pricing</p>
+                                <p>Help</p>
+                                <p>FAQs</p>
+                            </div>
+
+                        </div>
+                        <div class="footerC">
+                            Appstore
+                        </div>
+                        <div class="footerD">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 col-lg-4">
+                                    <font size="2">&copy 2017 Uber Technologies Inc.</font>
+                                </div>
+                                <div class="col-xs-12 col-md-4 col-lg-4">
+                                    <font size="2">Privacy</font>
+                                </div>
+                                <div class="col-xs-12 col-md-4 col-lg-4">
+                                    <font size="2">Terms</font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
 
 </html>
