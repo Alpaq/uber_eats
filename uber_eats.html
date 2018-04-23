@@ -168,7 +168,7 @@
 
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 991px) {
             .col-lg-1 {
                 flex-basis: 8.3333%;
             }
@@ -216,13 +216,16 @@
             .col-lg-12 {
                 flex-basis: 100%;
             }
+            .hidden-md {
+                display: block;
+            }
             .hidden-lg {
                 display: none;
             }
+
         }
 
-
-        .logoWhite {
+        .logoHeader {
             padding-bottom: 30px;
             padding-top: 30px;
 
@@ -241,7 +244,7 @@
             text-decoration: none;
             display: inline-block;
             border: 1px solid #e7e7e7;
-            border-radius: 2px;
+            border-radius: 2px;/
         }
 
         .when {
@@ -270,13 +273,14 @@
             font-size: 16px;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 19px;
-            align: left;
-            padding-right: 9px;
+            /* align: left; */
+            /* padding: 28px 9px 25px 9px; */
             color: #626262;
 
         }
 
         .searchBarAddress {
+
             font-family: Arial, Helvetica, sans-serif;
             margin-top: 17px;
             line-height: 24px;
@@ -286,8 +290,9 @@
             background-image: url('static/icons/location.svg');
             background-position: 12px 12.5px;
             background-repeat: no-repeat;
-            padding: 8px 0px 8px 36px;
+            padding: 8px 72px 8px 36px;
             border: 1px solid #E0E0E0;
+            /* margin-left: 9px; */
         }
 
         .buttonSignIn {
@@ -325,7 +330,7 @@
 
         .basket {
 
-            padding-left: 27px;
+            /* margin-left: 27px; */
         }
 
         .searchBarRestaurant {
@@ -404,18 +409,30 @@
             margin-bottom: 17px;
         }
 
-        .select {
+        select {
             -webkit-appearance: searchfield;
             -moz-appearance: menulist-button;
             appearance: button;
+            background-image: url('static/icons/world.svg');
+            background-position: 24px;
+            background-repeat: no-repeat;
+            
             width: 100%;
-            padding: 16px 10px;
+            padding: 16px 48px;
             border: none;
             background-color: #3B3B3B;
             color: #FFFFFF;
 
         }
 
+        select:after {
+            content: "";
+            background-image: url('static/icons/arrow-select.svg');
+            background-position: 151px;
+            background-repeat: no-repeat;
+            
+
+        }
 
         .footerB {
             margin-top: 39px;
@@ -428,11 +445,9 @@
         }
 
         .appStore {
-
+            
             margin-top: 41.88px;
             margin-bottom: 39.87px;
-            margin-left: 35%;
-            margin-right: 41.22px;
         }
 
         .googlePlay {
@@ -443,21 +458,21 @@
         .footerD {
             padding-top: 40px;
             padding-bottom: 40px;
-
         }
 
         .container {
-            width: 976px;
             margin-left: 8px;
             margin-right: 8px;
-            /* margin-left: auto;
-            margin-right: auto; */
         }
 
-        .containerMiddle {
-            margin-left: 8px;
-            margin-right: 8px;
+        @media (min-width: 992px) {
+            .container {
+                width: 976px;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
+        
 
 
         .row {
@@ -477,20 +492,22 @@
             color: #49A144;
 
         }
+       
     </style>
+</head>
 
     <body>
+
         <header>
-            <div class="container">
+            <div class="container containerHeader">
                 <div class="row">
                     <div class="col-xs-5 col-md-2 col-lg-2">
-                        <img class="logoWhite" src="static/icons/logo.svg" />
+                        <img class="logoHeader" src="static/icons/logo.svg" />
                     </div>
                     <div class="hidden-xs hidden-md col-lg-1">
                     </div>
                     <div class="hidden-xs col-md-1 col-lg-1">
                         <button class="buttonAsap" type="button">ASAP</button>
-
                     </div>
                     <div class="hidden-xs col-md-4 col-lg-4">
                         <span class="to">to</span>
@@ -502,7 +519,7 @@
                         <button class="buttonSignIn" type="button">Sign In</button>
                         <button class="buttonRegister" type="button">Register</button>
                     </div>
-                    <div class="hidden-xs col-md-3 col-lg-4">
+                    <div class="hidden-xs col-md-3 col-lg-3">
                         <button class="buttonSignIn" type="button">Sign In</button>
                         <button class="buttonRegister" type="button">Register</button>
                         <img class="basket" src="static/icons/basket.svg" />
@@ -542,11 +559,9 @@
                     <h4 class="minutes">25 - 35 Min</h4>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-4">
-                    <picture>
-                        <source media="(max-width: 576px)" srcset="static/images/DimSumaCo.png">
-                        <source media="(min-width: 576px)" srcset="static/images/DimSumaCo.png">
-                        <img src="static/images/DimSumaCo.png" alt="DimSum" width="100%">
-                    </picture>
+
+                    <img src="static/images/DimSumaCo.png" alt="DimSum" width="100%">
+
                     <h2 class="restaurantName">DimSum &#38 Co &ndash; ЦДМ</h2>
                     <h3 class="cuisine">&#8381 &bull; Японская &bull; Китайская &bull; Азиятская</h3>
                     <h4 class="minutes">40 - 50 Min</h4>
@@ -601,12 +616,11 @@
             <div class="container containerBottom">
                 <div class="footerA">
                     <img src="static/icons/logo_black.svg" />
-
                 </div>
                 <div class="footerB">
                     <div class="row">
                         <div class="col-xs-7 col-md-3 col-lg-3 ">
-                            <select class="select">
+                            <select>
                                 <option value="English ">ENGLISH</option>
                                 <option value="Russian ">RUSSIAN</option>
                             </select>
@@ -632,11 +646,17 @@
                     </div>
                 </div>
                 <div class="footerC ">
-                    <div class="col-xs-1 col-md-3 col-lg-4 ">
-                    </div>
-                    <div class="col-xs-5 col-md-3 col-lg-2 ">
-                        <img class="appStore " src="static/icons/appStore.png " />
-                        <img class="googlePlay " src="static/icons/googlePlay.png " />
+                    <div class="row ">
+                        <div class="col-xs-1 col-md-4 col-lg-4">
+                        </div>
+                        <div class="col-xs-5 col-md-2 col-lg-2 ">
+                            <img class="appStore " src="static/icons/appStore.png " />
+                        </div>
+                        <div class="col-xs-5 col-md-2 col-lg-2 ">
+                            <img class="googlePlay " src="static/icons/googlePlay.png " />
+                        </div>
+                        <div class="col-xs-1 col-md-4 col-lg-4 ">
+                        </div>
                     </div>
                 </div>
                 <div class="footerD ">
@@ -650,6 +670,10 @@
                         <div class="hidden-xs col-md-4 col-lg-4 ">
                             <font size="2 ">Terms</font>
                         </div>
+                    </div>
+                </div>
+                <div class="footerDMobile">
+                    <div class="row ">
                         <div class="col-xs-12 hidden-md hidden-lg">
                             <font size="2 ">&copy 2017 Uber Technologies Inc.</font>
                         </div>
@@ -661,6 +685,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             </div>
         </footer>
