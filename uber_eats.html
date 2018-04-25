@@ -14,7 +14,7 @@
         footer {
             font-family: Arial, Helvetica, sans-serif;
             color: white;
-            box background-color: #262626;
+            background-color: #262626;
         }
 
         .col-xs-1,
@@ -168,7 +168,7 @@
 
         }
 
-        @media (min-width: 991px) {
+        @media (min-width: 992px) {
             .col-lg-1 {
                 flex-basis: 8.3333%;
             }
@@ -228,7 +228,6 @@
         .logoHeader {
             padding-bottom: 30px;
             padding-top: 30px;
-
         }
 
         .buttonAsap {
@@ -238,13 +237,17 @@
             padding-bottom: 8px;
             padding-top: 8px;
             margin-top: 16px;
+            margin-bottom: 16px;
             background-color: white;
             color: #1D1D1D;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             border: 1px solid #e7e7e7;
-            border-radius: 2px;/
+            border-radius: 2px;
+            width: 65px;
+            height: 40px;
+    
         }
 
         .when {
@@ -273,8 +276,8 @@
             font-size: 16px;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 19px;
-            /* align: left; */
-            /* padding: 28px 9px 25px 9px; */
+            align: left;
+            padding: 28px 9px 25px 9px;
             color: #626262;
 
         }
@@ -283,16 +286,18 @@
 
             font-family: Arial, Helvetica, sans-serif;
             margin-top: 17px;
+            margin-bottom: 15px;
             line-height: 24px;
             radius: 16px;
             offset: 0px, 0px;
             color: #1D1D1D;
             background-image: url('static/icons/location.svg');
-            background-position: 12px 12.5px;
+            background-position: 12px 11px;
             background-repeat: no-repeat;
-            padding: 8px 72px 8px 36px;
+            padding: 8px 62px 8px 36px;
             border: 1px solid #E0E0E0;
-            /* margin-left: 9px; */
+            height: 22px;
+            
         }
 
         .buttonSignIn {
@@ -302,6 +307,7 @@
             padding-bottom: 8px;
             padding-top: 8px;
             margin-top: 16px;
+            margin-bottom: 16px;
             background-color: white;
             color: #1D1D1D;
             text-align: center;
@@ -309,6 +315,8 @@
             display: inline-block;
             border: 1px solid #e7e7e7;
             border-radius: 2px;
+            width: 80px;
+            height: 40px;
         }
 
         .buttonRegister {
@@ -318,6 +326,8 @@
             padding-bottom: 8px;
             padding-top: 8px;
             margin-top: 16px;
+            margin-bottom: 16px;
+            margin-left: 16px;
             background-color: #262626;
             color: #FFFFFF;
             text-align: center;
@@ -325,12 +335,15 @@
             display: inline-block;
             border: 1px solid #262626;
             border-radius: 2px;
+            width: 80px;
+            height: 40px;
 
         }
 
         .basket {
 
-            /* margin-left: 27px; */
+            margin-left: 27px;
+            margin-right: 10px;
         }
 
         .searchBarRestaurant {
@@ -416,7 +429,7 @@
             background-image: url('static/icons/world.svg');
             background-position: 24px;
             background-repeat: no-repeat;
-            
+
             width: 100%;
             padding: 16px 48px;
             border: none;
@@ -430,7 +443,7 @@
             background-image: url('static/icons/arrow-select.svg');
             background-position: 151px;
             background-repeat: no-repeat;
-            
+
 
         }
 
@@ -445,7 +458,7 @@
         }
 
         .appStore {
-            
+
             margin-top: 41.88px;
             margin-bottom: 39.87px;
         }
@@ -472,7 +485,7 @@
                 margin-right: auto;
             }
         }
-        
+
 
 
         .row {
@@ -492,15 +505,14 @@
             color: #49A144;
 
         }
-       
     </style>
 </head>
 
-    <body>
+<body>
 
-        <header>
-            <div class="container containerHeader">
-                <div class="row">
+    <header>
+        <div class="container containerHeader">
+            <!-- <div class="row">
                     <div class="col-xs-5 col-md-2 col-lg-2">
                         <img class="logoHeader" src="static/icons/logo.svg" />
                     </div>
@@ -524,172 +536,197 @@
                         <button class="buttonRegister" type="button">Register</button>
                         <img class="basket" src="static/icons/basket.svg" />
                     </div>
-                </div>
-            </div>
-        </header>
+                </div> -->
 
-        <div class="container containerMiddle">
             <div class="row">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                    <input class="searchBarRestaurant" type="text" name="search" placeholder="Search for restaurant or cuisine" />
-                </div>
-                <div class="col-xs-3 hidden-md hidden-lg">
-                    <span class="when">When</span>
-                </div>
-                <div class="col-xs-9 hidden-md hidden-lg">
-                    <span class="toMob">To</span>
-                </div>
-                <div class="col-xs-3 hidden-md hidden-lg">
-                    <button class="buttonAsap" type="button">ASAP</button>
-                </div>
-                <div class="col-xs-9 hidden-md hidden-lg">
-                    <input class="searchBarAddress" type="text" name="search" placeholder="ul. Bolshaya Dmitrovka, 22" value="ul. Bolshaya Dmitrovka, 22">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-8 col-md-4 col-lg-3">
-                    <h1>Moscow Restaurants</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/mcdonalds.png" alt="McDonalds" width="100%">
-                    <h2 class="restaurantName">Макдоналдс &ndash; Газетный</h2>
-                    <h3 class="cuisine">&#8381&#8381 &bull; Бургеры</h3>
-                    <h4 class="minutes">25 - 35 Min</h4>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
+                <div style="width:653px;display:flex;justify-content:space-between;">
 
-                    <img src="static/images/DimSumaCo.png" alt="DimSum" width="100%">
+                    <div class="boxLogo" style="width: 200px; margin-left: 8px; ">
+                        <img class="logoHeader" src="static/icons/logo.svg">
+                    </div>
 
-                    <h2 class="restaurantName">DimSum &#38 Co &ndash; ЦДМ</h2>
-                    <h3 class="cuisine">&#8381 &bull; Японская &bull; Китайская &bull; Азиятская</h3>
-                    <h4 class="minutes">40 - 50 Min</h4>
+                    <div style="display:flex;justify-content:space-between; width:400px;" class="boxPosition"">
+                        <button class="buttonAsap" type="button">ASAP</button>
+                        <span style="display:block;" class="to">to</span>
+                        <input class="searchBarAddress" name="search" placeholder="ul. Bolshaya Dmitrovka, 22" value="ul. Bolshaya Dmitrovka, 22"
+                            type="text">
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/DvizhOK.png" alt="DvizhOK" width="100%">
-                    <h2 class="restaurantName">ДвижОК &ndash; Манежная</h2>
-                    <h3 class="cuisine">&#8381 &bull; Американская &bull; Европейская</h3>
-                    <h4 class="minutes">35 - 45 Min</h4>
+                <div style="display:flex;justify-content: flex-end; width: 332px;" class="boxButtons">
+                        <button class="buttonSignIn" type="button">Sign In</button>
+                        <button class="buttonRegister" type="button">Register</button>
+                        <img class="basket" src="static/icons/basket.svg" />
+
+
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/NHA.png" alt="NHA" width="100%">
-                    <h2 class="restaurantName">НЯ &ndash; NHA</h2>
-                    <h3 class="cuisine">&#8381 &bull; Вьетнамская</h3>
-                    <h4 class="minutes">30 - 40 Min</h4>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/TochkaDzy.png" alt="TochkaDzy" width="100%">
-                    <h2 class="restaurantName">Точка Дзы &ndash; Цветной</h2>
-                    <h3 class="cuisine">&#8381&#8381 &bull; Вьетнамская</h3>
-                    <h4 class="minutes">40 - 50 Min</h4>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/Cinnabon.png" alt="Cinnabon" width="100%">
-                    <h2 class="restaurantName">Cinnabon</h2>
-                    <h3 class="cuisine">&#8381 &bull; Выпечка &bull; Десерты &bull; Капкейки</h3>
-                    <h4 class="minutes">25 - 35 Min</h4>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/Pizzalove.png" alt="Pizzalove" width="100%">
-                    <h2 class="restaurantName">PIZZALOVE</h2>
-                    <h3 class="cuisine">&#8381&#8381 &bull; Пицца</h3>
-                    <h4 class="minutes">15 - 25 Min</h4>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/ZyuKafe.png" alt="ZyuKafe" width="100%">
-                    <h2 class="restaurantName">Zю кафе &ndash; Тверская</h2>
-                    <h3 class="cuisine">&#8381&#8381 &bull; Японская</h3>
-                    <h4 class="minutes">25 - 35 Min</h4>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <img src="static/images/barbqcafe.png" alt="Barbqcafe" width="100%">
-                    <h2 class="restaurantName">Bar BQ Cafe &ndash; Манежная</h2>
-                    <h3 class="cuisine">&#8381&#8381 &bull; Европейская</h3>
-                    <h4 class="minutes">30 - 40 Min</h4>
-                </div>
+
+
             </div>
         </div>
+    </header>
 
-
-        <footer style="background-color: #262626">
-            <div class="container containerBottom">
-                <div class="footerA">
-                    <img src="static/icons/logo_black.svg" />
-                </div>
-                <div class="footerB">
-                    <div class="row">
-                        <div class="col-xs-7 col-md-3 col-lg-3 ">
-                            <select>
-                                <option value="English ">ENGLISH</option>
-                                <option value="Russian ">RUSSIAN</option>
-                            </select>
-                            <p class="hashtagUbereats">
-                                <span class="hashtag">#</span>UberEats</p>
-                            <img src="static/icons/facebook-2.svg " />
-                            <img src="static/icons/twitter-1.svg " />
-                            <img src="static/icons/instagram-1.svg " />
-                        </div>
-                        <div class="hidden-xs col-md-1 col-lg-1">
-                        </div>
-                        <div class="col-xs-12 col-md-4 col-lg-4 ">
-                            <p>About UberEats</p>
-                            <p>Become a Delivery Partner</p>
-                            <p>Become a Restaurant Partner</p>
-                        </div>
-                        <div class="col-xs-12 col-md-4 col-lg-4 ">
-                            <p>See all cities</p>
-                            <p>Pricing</p>
-                            <p>Help</p>
-                            <p>FAQs</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footerC ">
-                    <div class="row ">
-                        <div class="col-xs-1 col-md-4 col-lg-4">
-                        </div>
-                        <div class="col-xs-5 col-md-2 col-lg-2 ">
-                            <img class="appStore " src="static/icons/appStore.png " />
-                        </div>
-                        <div class="col-xs-5 col-md-2 col-lg-2 ">
-                            <img class="googlePlay " src="static/icons/googlePlay.png " />
-                        </div>
-                        <div class="col-xs-1 col-md-4 col-lg-4 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="footerD ">
-                    <div class="row ">
-                        <div class="hidden-xs col-md-4 col-lg-4 ">
-                            <font size="2 ">&copy 2017 Uber Technologies Inc.</font>
-                        </div>
-                        <div class="hidden-xs col-md-4 col-lg-4 ">
-                            <font size="2 ">Privacy</font>
-                        </div>
-                        <div class="hidden-xs col-md-4 col-lg-4 ">
-                            <font size="2 ">Terms</font>
-                        </div>
-                    </div>
-                </div>
-                <div class="footerDMobile">
-                    <div class="row ">
-                        <div class="col-xs-12 hidden-md hidden-lg">
-                            <font size="2 ">&copy 2017 Uber Technologies Inc.</font>
-                        </div>
-                        <div class="col-xs-12 hidden-md hidden-lg">
-                            <font size="2 ">Privacy</font>
-                        </div>
-                        <div class="col-xs-12 hidden-md hidden-lg">
-                            <font size="2 ">Terms</font>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="container containerMiddle">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <input class="searchBarRestaurant" type="text" name="search" placeholder="Search for restaurant or cuisine" />
             </div>
+            <div class="col-xs-3 hidden-md hidden-lg">
+                <span class="when">When</span>
             </div>
-        </footer>
+            <div class="col-xs-9 hidden-md hidden-lg">
+                <span class="toMob">To</span>
+            </div>
+            <div class="col-xs-3 hidden-md hidden-lg">
+                <button class="buttonAsap" type="button">ASAP</button>
+            </div>
+            <div class="col-xs-9 hidden-md hidden-lg">
+                <input class="searchBarAddress" type="text" name="search" placeholder="ul. Bolshaya Dmitrovka, 22" value="ul. Bolshaya Dmitrovka, 22">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 col-md-4 col-lg-3">
+                <h1>Moscow Restaurants</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/mcdonalds.png" alt="McDonalds" width="100%">
+                <h2 class="restaurantName">Макдоналдс &ndash; Газетный</h2>
+                <h3 class="cuisine">&#8381&#8381 &bull; Бургеры</h3>
+                <h4 class="minutes">25 - 35 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
 
-    </body>
+                <img src="static/images/DimSumaCo.png" alt="DimSum" width="100%">
+
+                <h2 class="restaurantName">DimSum &#38 Co &ndash; ЦДМ</h2>
+                <h3 class="cuisine">&#8381 &bull; Японская &bull; Китайская &bull; Азиятская</h3>
+                <h4 class="minutes">40 - 50 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/DvizhOK.png" alt="DvizhOK" width="100%">
+                <h2 class="restaurantName">ДвижОК &ndash; Манежная</h2>
+                <h3 class="cuisine">&#8381 &bull; Американская &bull; Европейская</h3>
+                <h4 class="minutes">35 - 45 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/NHA.png" alt="NHA" width="100%">
+                <h2 class="restaurantName">НЯ &ndash; NHA</h2>
+                <h3 class="cuisine">&#8381 &bull; Вьетнамская</h3>
+                <h4 class="minutes">30 - 40 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/TochkaDzy.png" alt="TochkaDzy" width="100%">
+                <h2 class="restaurantName">Точка Дзы &ndash; Цветной</h2>
+                <h3 class="cuisine">&#8381&#8381 &bull; Вьетнамская</h3>
+                <h4 class="minutes">40 - 50 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/Cinnabon.png" alt="Cinnabon" width="100%">
+                <h2 class="restaurantName">Cinnabon</h2>
+                <h3 class="cuisine">&#8381 &bull; Выпечка &bull; Десерты &bull; Капкейки</h3>
+                <h4 class="minutes">25 - 35 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/Pizzalove.png" alt="Pizzalove" width="100%">
+                <h2 class="restaurantName">PIZZALOVE</h2>
+                <h3 class="cuisine">&#8381&#8381 &bull; Пицца</h3>
+                <h4 class="minutes">15 - 25 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/ZyuKafe.png" alt="ZyuKafe" width="100%">
+                <h2 class="restaurantName">Zю кафе &ndash; Тверская</h2>
+                <h3 class="cuisine">&#8381&#8381 &bull; Японская</h3>
+                <h4 class="minutes">25 - 35 Min</h4>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <img src="static/images/barbqcafe.png" alt="Barbqcafe" width="100%">
+                <h2 class="restaurantName">Bar BQ Cafe &ndash; Манежная</h2>
+                <h3 class="cuisine">&#8381&#8381 &bull; Европейская</h3>
+                <h4 class="minutes">30 - 40 Min</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="background-color: #262626">
+        <div class="container containerBottom">
+            <div class="footerA">
+                <img src="static/icons/logo_black.svg" />
+            </div>
+            <div class="footerB">
+                <div class="row">
+                    <div class="col-xs-7 col-md-3 col-lg-3 ">
+                        <select>
+                            <option value="English ">ENGLISH</option>
+                            <option value="Russian ">RUSSIAN</option>
+                        </select>
+                        <p class="hashtagUbereats">
+                            <span class="hashtag">#</span>UberEats</p>
+                        <img src="static/icons/facebook-2.svg " />
+                        <img src="static/icons/twitter-1.svg " />
+                        <img src="static/icons/instagram-1.svg " />
+                    </div>
+                    <div class="hidden-xs col-md-1 col-lg-1">
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-4 ">
+                        <p>About UberEats</p>
+                        <p>Become a Delivery Partner</p>
+                        <p>Become a Restaurant Partner</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-4 ">
+                        <p>See all cities</p>
+                        <p>Pricing</p>
+                        <p>Help</p>
+                        <p>FAQs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerC ">
+                <div class="row ">
+                    <div class="col-xs-1 col-md-4 col-lg-4">
+                    </div>
+                    <div class="col-xs-5 col-md-2 col-lg-2 ">
+                        <img class="appStore " src="static/icons/appStore.png " />
+                    </div>
+                    <div class="col-xs-5 col-md-2 col-lg-2 ">
+                        <img class="googlePlay " src="static/icons/googlePlay.png " />
+                    </div>
+                    <div class="col-xs-1 col-md-4 col-lg-4 ">
+                    </div>
+                </div>
+            </div>
+            <div class="footerD ">
+                <div class="row ">
+                    <div class="hidden-xs col-md-4 col-lg-4 ">
+                        <font size="2 ">&copy 2017 Uber Technologies Inc.</font>
+                    </div>
+                    <div class="hidden-xs col-md-4 col-lg-4 ">
+                        <font size="2 ">Privacy</font>
+                    </div>
+                    <div class="hidden-xs col-md-4 col-lg-4 ">
+                        <font size="2 ">Terms</font>
+                    </div>
+                </div>
+            </div>
+            <div class="footerDMobile">
+                <div class="row ">
+                    <div class="col-xs-12 hidden-md hidden-lg">
+                        <font size="2 ">&copy 2017 Uber Technologies Inc.</font>
+                    </div>
+                    <div class="col-xs-12 hidden-md hidden-lg">
+                        <font size="2 ">Privacy</font>
+                    </div>
+                    <div class="col-xs-12 hidden-md hidden-lg">
+                        <font size="2 ">Terms</font>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+
+</body>
 
 </html>
