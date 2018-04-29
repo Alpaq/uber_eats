@@ -1,228 +1,227 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>Uber Eats</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
+<meta charset="UTF-8">
+<title>uber_eats_2</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
 
-    <style type="text/css">
-        .col-xs-1,
-        .col-xs-2,
-        .col-xs-3,
-        .col-xs-4,
-        .col-xs-5,
-        .col-xs-6,
-        .col-xs-7,
-        .col-xs-8,
-        .col-xs-9,
-        .col-xs-10,
-        .col-xs-11,
-        .col-xs-12,
-        .col-md-1,
-        .col-md-2,
-        .col-md-3,
-        .col-md-4,
-        .col-md-5,
-        .col-md-6,
-        .col-md-7,
-        .col-md-8,
-        .col-md-9,
-        .col-md-10,
-        .col-md-11,
-        .col-md-12,
-        .col-lg-1,
-        .col-lg-2,
-        .col-lg-3,
-        .col-lg-4,
-        .col-lg-5,
-        .col-lg-6,
-        .col-lg-7,
-        .col-lg-8,
-        .col-lg-9,
-        .col-lg-10,
-        .col-lg-11,
-        .col-lg-12 {
+<style type="text/css">
+    .col-xs-1,
+    .col-xs-2,
+    .col-xs-3,
+    .col-xs-4,
+    .col-xs-5,
+    .col-xs-6,
+    .col-xs-7,
+    .col-xs-8,
+    .col-xs-9,
+    .col-xs-10,
+    .col-xs-11,
+    .col-xs-12,
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
 
-            /* For every column (1 through 12) on every device (xs, md, lg): */
-            padding-left: 8px;
-            padding-right: 8px;
-            box-sizing: border-box;
-        }
+        /* For every column (1 through 12) on every device (xs, md, lg): */
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
+    }
 
 
-        .col-xs-1 {
+    .col-xs-1 {
+        flex-basis: 8.3333%;
+    }
+
+    .col-xs-2 {
+        flex-basis: 16.6666%;
+    }
+
+    .col-xs-3 {
+        flex-basis: 24.9999%
+    }
+
+    .col-xs-4 {
+        flex-basis: 33.3333%;
+    }
+
+    .col-xs-5 {
+        flex-basis: 41.6665%;
+    }
+
+    .col-xs-6 {
+        flex-basis: 49.9998%;
+    }
+
+    .col-xs-7 {
+        flex-basis: 58.3331%;
+    }
+
+    .col-xs-8 {
+        flex-basis: 66.6664%;
+    }
+
+    .col-xs-9 {
+        flex-basis: 74.9997%;
+    }
+
+    .col-xs-10 {
+        flex-basis: 83.3333%;
+    }
+
+    .col-xs-11 {
+        flex-basis: 91.6663%;
+    }
+
+    .col-xs-12 {
+        flex-basis: 100%;
+    }
+
+    .hidden-xs {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .col-md-1 {
             flex-basis: 8.3333%;
         }
 
-        .col-xs-2 {
+        .col-md-2 {
             flex-basis: 16.6666%;
         }
 
-        .col-xs-3 {
+        .col-md-3 {
             flex-basis: 24.9999%
         }
 
-        .col-xs-4 {
+        .col-md-4 {
             flex-basis: 33.3333%;
         }
 
-        .col-xs-5 {
+        .col-md-5 {
             flex-basis: 41.6665%;
         }
 
-        .col-xs-6 {
+        .col-md-6 {
             flex-basis: 49.9998%;
         }
 
-        .col-xs-7 {
+        .col-md-7 {
             flex-basis: 58.3331%;
         }
 
-        .col-xs-8 {
+        .col-md-8 {
             flex-basis: 66.6664%;
         }
 
-        .col-xs-9 {
+        .col-md-9 {
             flex-basis: 74.9997%;
         }
 
-        .col-xs-10 {
+        .col-md-10 {
             flex-basis: 83.3333%;
         }
 
-        .col-xs-11 {
+        .col-md-11 {
             flex-basis: 91.6663%;
         }
 
-        .col-xs-12 {
+        .col-md-12 {
             flex-basis: 100%;
         }
-
         .hidden-xs {
+            display: block;
+        }
+        .hidden-md {
             display: none;
         }
 
-        @media (min-width: 768px) {
-            .col-md-1 {
-                flex-basis: 8.3333%;
-            }
+    }
 
-            .col-md-2 {
-                flex-basis: 16.6666%;
-            }
-
-            .col-md-3 {
-                flex-basis: 24.9999%
-            }
-
-            .col-md-4 {
-                flex-basis: 33.3333%;
-            }
-
-            .col-md-5 {
-                flex-basis: 41.6665%;
-            }
-
-            .col-md-6 {
-                flex-basis: 49.9998%;
-            }
-
-            .col-md-7 {
-                flex-basis: 58.3331%;
-            }
-
-            .col-md-8 {
-                flex-basis: 66.6664%;
-            }
-
-            .col-md-9 {
-                flex-basis: 74.9997%;
-            }
-
-            .col-md-10 {
-                flex-basis: 83.3333%;
-            }
-
-            .col-md-11 {
-                flex-basis: 91.6663%;
-            }
-
-            .col-md-12 {
-                flex-basis: 100%;
-            }
-            .hidden-xs {
-                display: block;
-            }
-            .hidden-md {
-                display: none;
-            }
-
+    @media (min-width: 992px) {
+        .col-lg-1 {
+            flex-basis: 8.3333%;
         }
 
-        @media (min-width: 992px) {
-            .col-lg-1 {
-                flex-basis: 8.3333%;
-            }
-
-            .col-lg-2 {
-                flex-basis: 16.6666%;
-            }
-
-            .col-lg-3 {
-                flex-basis: 24.9999%
-            }
-
-            .col-lg-4 {
-                flex-basis: 33.3333%;
-            }
-
-            .col-lg-5 {
-                flex-basis: 41.6665%;
-            }
-
-            .col-lg-6 {
-                flex-basis: 49.9998%;
-            }
-
-            .col-lg-7 {
-                flex-basis: 58.3331%;
-            }
-
-            .col-lg-8 {
-                flex-basis: 66.6664%;
-            }
-
-            .col-lg-9 {
-                flex-basis: 74.9997%;
-            }
-
-            .col-lg-10 {
-                flex-basis: 83.3333%;
-            }
-
-            .col-lg-11 {
-                flex-basis: 91.6663%;
-            }
-
-            .col-lg-12 {
-                flex-basis: 100%;
-            }
-            .hidden-md {
-                display: block;
-            }
-            .hidden-lg {
-                display: none;
-            }
-
+        .col-lg-2 {
+            flex-basis: 16.6666%;
         }
 
-        .container {
-            margin-left: 8px;
-            margin-right: 8px;
+        .col-lg-3 {
+            flex-basis: 24.9999%
         }
 
-        /* =========== Header: START ============ */
+        .col-lg-4 {
+            flex-basis: 33.3333%;
+        }
+
+        .col-lg-5 {
+            flex-basis: 41.6665%;
+        }
+
+        .col-lg-6 {
+            flex-basis: 49.9998%;
+        }
+
+        .col-lg-7 {
+            flex-basis: 58.3331%;
+        }
+
+        .col-lg-8 {
+            flex-basis: 66.6664%;
+        }
+
+        .col-lg-9 {
+            flex-basis: 74.9997%;
+        }
+
+        .col-lg-10 {
+            flex-basis: 83.3333%;
+        }
+
+        .col-lg-11 {
+            flex-basis: 91.6663%;
+        }
+
+        .col-lg-12 {
+            flex-basis: 100%;
+        }
+        .hidden-md {
+            display: block;
+        }
+        .hidden-lg {
+            display: none;
+        }
+
+    }
+
+    .container {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+ /* =========== Header: START ============ */
 
         header {
             box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
@@ -518,56 +517,6 @@
         }
 
         /* =========== Header: END ============ */
-
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 22px;
-            line-height: 34px;
-            text-align: left;
-            padding-top: 56px;
-            padding-bottom: 16px;
-        }
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
-
-        }
-
-        .restaurantName {
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            color: #1D1D1D;
-            margin-top: 16px;
-            margin-bottom: 4px;
-        }
-
-        .cuisine {
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #626262;
-            margin-top: 4px;
-            margin-bottom: 4px;
-        }
-
-        .minutes {
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 13px;
-            line-height: 21px;
-            margin-bottom: 16px;
-            color: #1D1D1D;
-            margin-top: 4px;
-            margin-bottom: 36px;
-        }
-
         /* =========== Footer: START ============ */
 
         footer {
@@ -692,7 +641,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="container containerHeader">
             <div class="row" style="flex-wrap: unset">
@@ -716,88 +664,6 @@
             </div>
         </div>
     </header>
-
-    <div class="container containerMiddle">
-        <div class="row">
-            <div class="col-xs-12 col-md-12 col-lg-12">
-                <input class="searchBarRestaurant" type="text" name="search" placeholder="Search for restaurant or cuisine" />
-            </div>
-            <div class="col-xs-3 hidden-md hidden-lg">
-                <span class="when">When</span>
-            </div>
-            <div class="col-xs-9 hidden-md hidden-lg">
-                <span class="toMob">To</span>
-            </div>
-            <div class="col-xs-3 hidden-md hidden-lg">
-                <button class="buttonAsap" type="button">ASAP</button>
-            </div>
-            <div class="col-xs-9 hidden-md hidden-lg">
-                <input class="searchBarAddress" type="text" name="search" placeholder="ul. Bolshaya Dmitrovka, 22" value="ul. Bolshaya Dmitrovka, 22">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-4 col-lg-3">
-                <h1>Moscow Restaurants</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/mcdonalds.png" alt="McDonalds" width="100%">
-                <h2 class="restaurantName">Макдоналдс &ndash; Газетный</h2>
-                <h3 class="cuisine">&#8381&#8381 &bull; Бургеры</h3>
-                <h4 class="minutes">25 - 35 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-
-                <img src="static/images/DimSumaCo.png" alt="DimSum" width="100%">
-                <h2 class="restaurantName">DimSum &#38 Co &ndash; ЦДМ</h2>
-                <h3 class="cuisine">&#8381 &bull; Японская &bull; Китайская &bull; Азиятская</h3>
-                <h4 class="minutes">40 - 50 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/DvizhOK.png" alt="DvizhOK" width="100%">
-                <h2 class="restaurantName">ДвижОК &ndash; Манежная</h2>
-                <h3 class="cuisine">&#8381 &bull; Американская &bull; Европейская</h3>
-                <h4 class="minutes">35 - 45 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/NHA.png" alt="NHA" width="100%">
-                <h2 class="restaurantName">НЯ &ndash; NHA</h2>
-                <h3 class="cuisine">&#8381 &bull; Вьетнамская</h3>
-                <h4 class="minutes">30 - 40 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/TochkaDzy.png" alt="TochkaDzy" width="100%">
-                <h2 class="restaurantName">Точка Дзы &ndash; Цветной</h2>
-                <h3 class="cuisine">&#8381&#8381 &bull; Вьетнамская</h3>
-                <h4 class="minutes">40 - 50 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/Cinnabon.png" alt="Cinnabon" width="100%">
-                <h2 class="restaurantName">Cinnabon</h2>
-                <h3 class="cuisine">&#8381 &bull; Выпечка &bull; Десерты &bull; Капкейки</h3>
-                <h4 class="minutes">25 - 35 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/Pizzalove.png" alt="Pizzalove" width="100%">
-                <h2 class="restaurantName">PIZZALOVE</h2>
-                <h3 class="cuisine">&#8381&#8381 &bull; Пицца</h3>
-                <h4 class="minutes">15 - 25 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/ZyuKafe.png" alt="ZyuKafe" width="100%">
-                <h2 class="restaurantName">Zю кафе &ndash; Тверская</h2>
-                <h3 class="cuisine">&#8381&#8381 &bull; Японская</h3>
-                <h4 class="minutes">25 - 35 Min</h4>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-4">
-                <img src="static/images/barbqcafe.png" alt="Barbqcafe" width="100%">
-                <h2 class="restaurantName">Bar BQ Cafe &ndash; Манежная</h2>
-                <h3 class="cuisine">&#8381&#8381 &bull; Европейская</h3>
-                <h4 class="minutes">30 - 40 Min</h4>
-            </div>
-        </div>
-    </div>
 
 
     <footer style="background-color: #262626">
@@ -891,7 +757,9 @@
         </div>
         </div>
     </footer>
-
 </body>
 
 </html>
+
+
+
