@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>uber_eats_2</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
-    
-    <link rel="stylesheet" type="text/css" href="static/css/uber_eats.css" >
+
+    <link rel="stylesheet" type="text/css" href="static/css/uber_eats.css">
 
 </head>
 
@@ -37,19 +37,24 @@
 
 
 
-    
+
 
     <div class="container containerMiddle">
         <div class="row">
 
-            <div class="boxRestaurant">
+
+            <div class="imageTraktirPushkin">
+                <img src="static/images/pushkin.png" alt="Traktir Pushkin">
+            </div>
+
+            <div class="col-xs-12 col-md-12 col-lg-12">
                 <h1 class="traktirPushkin">Трактир «Пушкин»</h1>
                 <h4>₽₽₽ • Европейская</h4>
                 <button class="buttonMinutes" type="button">40 - 50 Min</button>
             </div>
 
 
-            <ul>
+            <ul class="hidden-xs col-md-12 col-lg-12">
                 <li>
                     <a href="#">Закуски</a>
                 </li>
@@ -63,70 +68,137 @@
                     <a href="#">Горячие блюда</a>
                 </li>
                 <li>
-                    <a href="#"></a>Гарниры</li>
+                    <a href="#">Гарниры</a>
+                </li>
                 <li>
-                    <a href="#"></a>Десерты</li>
+                    <a href="#">Десерты</a>
+                </li>
             </ul>
 
 
+            <div class="col-xs-4 hidden-md hidden-lg">
 
-            <h2 class="zakuski">Закуски</h2>
+            </div>
+            <div class="col-xs-4 col-md-12 col-lg-12">
+                <p class="zakuski">Закуски</p>
+            </div>
+
+            <div class="col-xs-4 hidden-md hidden-lg">
+
+            </div>
 
 
+<!-- mobile -->
 
-
-            <div class="col-xs-12 col-md-12 col-lg-6">
-                <img class="imagesSnack" src="static/images/photo-5.png" alt="Seld" width="">
+            <div class="col-xs-9 col-md-9 hidden-lg boxSnack">
                 <p class="snackName">Сельдь на бородинском…</p>
                 <p class="snackWith">С яйцом и огурцом</p>
                 <p class="price">240 ₽</p>
             </div>
-
-            <div class="col-xs-12 col-md-12 col-lg-6">
-                <img class="imagesSnack" src="static/images/photo-3.png" alt="Griby" width="">
-                <p class="snackName">Грибы маринованные</p>
-                <p class="price">300 ₽</p>
+            <div class="col-xs-3 col-md-3 hidden-lg">
+                <img class="imagesSnack" src="static/images/photo-5.png" alt="Seld" width="">
             </div>
 
-            <div class="col-xs-12 col-md-12 col-lg-6">
-                <img class="imagesSnack" src="static/images/photo-1.png" alt="" width="">
-                <p class="snackName">Малосольная семга</p>
-                <p class="price">390 ₽</p>
-            </div>
-
-            <div class="col-xs-12 col-md-12 col-lg-6">
-                <img class="imagesSnack" src="static/images/photo-4.png" alt="" width="">
+            <div class="col-xs-9 col-md-9 hidden-lg">
                 <p class="snackName">Соленья ассорти</p>
                 <p class="price">320 ₽</p>
             </div>
+            <div class="col-xs-3 col-md-3 hidden-lg">
+                <img class="imagesSnack" src="static/images/photo-4.png" alt="" width="">
+            </div>
 
-            <div class="col-xs-12 col-md-12 col-lg-6">
-                <img class="imagesSnack" src="static/images/photo-2.png" alt="" width="">
+            <div class="col-xs-9 col-md-9 hidden-lg">
+                <p class="snackName">Грибы маринованные</p>
+                <p class="price">300 ₽</p>
+            </div>
+            <div class="col-xs-3 col-md-3 hidden-lg">
+                <img class="imagesSnack" src="static/images/photo-3.png" alt="Griby" width="">
+            </div>
+
+            <div class="col-xs-9 col-md-9 hidden-lg">
                 <p class="snackName">Сало домашнее с горчицей</p>
                 <p class="price">320 ₽</p>
             </div>
+            <div class="col-xs-3 col-md-3 hidden-lg">
+                <img class="imagesSnack" src="static/images/photo-2.png" alt="" width="">
+            </div>
 
-            <div class="col-xs-12 col-md-12 col-lg-6">
-                <img class="imagesSnack" src="static/images/photo.png" alt="" width="">
+            <div class="col-xs-9 col-md-9 hidden-lg">
+                <p class="snackName">Малосольная семга</p>
+                <p class="price">390 ₽</p>
+            </div>
+            <div class="col-xs-3 col-md-3 hidden-lg">
+                <img class="imagesSnack" src="static/images/photo-1.png" alt="" width="">
+            </div>
+
+            <div class="col-xs-9 col-md-9 hidden-lg">
                 <p class="snackName">Язык говяжий с хреном</p>
                 <p class="price">350 ₽</p>
             </div>
+            <div class="col-xs-3 col-md-3 hidden-lg">
+                <img class="imagesSnack" src="static/images/photo.png" alt="" width="">
+            </div>
+
+
+<!-- mobile -->
+
+<!-- desktop -->
+
+
+            <div class="hidden-xs hidden-md col-lg-4 boxSnack">
+                <p class="snackName">Сельдь на бородинском…</p>
+                <p class="snackWith">С яйцом и огурцом</p>
+                <p class="price">240 ₽</p>
+            </div>
+            <div class="hidden-xs hidden-md col-lg-2">
+                <img class="imagesSnack" src="static/images/photo-5.png" alt="Seld" width="">
+            </div>
+
+            <div class="hidden-xs hidden-md col-lg-4">
+                <p class="snackName">Соленья ассорти</p>
+                <p class="price">320 ₽</p>
+            </div>
+            <div class="hidden-xs hidden-md col-lg-2">
+                <img class="imagesSnack" src="static/images/photo-4.png" alt="" width="">
+            </div>
+
+            <div class="hidden-xs hidden-md col-lg-4">
+                <p class="snackName">Грибы маринованные</p>
+                <p class="price">300 ₽</p>
+            </div>
+            <div class="hidden-xs hidden-md col-lg-2">
+                <img class="imagesSnack" src="static/images/photo-3.png" alt="Griby" width="">
+            </div>
+
+            <div class="hidden-xs hidden-md col-lg-4">
+                <p class="snackName">Сало домашнее с горчицей</p>
+                <p class="price">320 ₽</p>
+            </div>
+            <div class="hidden-xs hidden-md col-lg-2">
+                <img class="imagesSnack" src="static/images/photo-2.png" alt="" width="">
+            </div>
+
+            <div class="hidden-xs hidden-md col-lg-4">
+                <p class="snackName">Малосольная семга</p>
+                <p class="price">390 ₽</p>
+            </div>
+            <div class="hidden-xs hidden-md col-lg-2">
+                <img class="imagesSnack" src="static/images/photo-1.png" alt="" width="">
+            </div>
+
+            <div class="hidden-xs hidden-md col-lg-4">
+                <p class="snackName">Язык говяжий с хреном</p>
+                <p class="price">350 ₽</p>
+            </div>
+            <div class="hidden-xs hidden-md col-lg-2">
+                <img class="imagesSnack" src="static/images/photo.png" alt="" width="">
+            </div>
+
+<!-- desktop -->
+
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

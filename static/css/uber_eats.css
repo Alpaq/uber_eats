@@ -323,7 +323,7 @@ header {
     radius: 16px;
     offset: 0px, 0px;
     color: #1D1D1D;
-    background-image: url('static/icons/location.svg');
+    background-image: url('../icons/location.svg');
     background-position: 12px 11px;
     background-repeat: no-repeat;
     padding: 8px 43px 8px 36px;
@@ -422,7 +422,7 @@ header {
     width: 95%;
     border: none;
     color: #626262;
-    background-image: url('static/icons/searchicon.svg');
+    background-image: url('../icons/searchicon.svg');
     background-position: 0px 15px;
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -443,6 +443,8 @@ header {
 }
 
 /* =========== Header: END ============ */
+
+/* =========== Page 1: START ============ */
 
 h1 {
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -492,6 +494,176 @@ img {
     margin-bottom: 36px;
 }
 
+/* =========== Page 1: END ============ */
+
+
+/* =========== Page 2: START ============ */
+
+
+
+.boxRestaurant {
+    width: 100%;
+    margin-top: 31px;
+}
+
+ul {
+    display: none;
+}
+@media (min-width: 768px) {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #626262;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.buttonMinutes {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #262626;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #262626;
+    border-radius: 16px;
+    width: 98px;
+    /* height: 32px; */
+}
+
+.boxRestaurant {
+    background-image: url('../images/pushkin.svg')
+}
+
+.traktirPushkin {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: regular;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1D1D1D;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: #626262;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.zakuski {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: regular;
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+    margin-top: 56px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.boxSnack {
+    border-bottom: 1 px #757575 solid;
+}
+.imageSnack {
+    /* float: right; */
+    
+}
+
+.snackName {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: regular;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+@media (min-width: 768px) {
+    .snackName {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.snackWith {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: regular;
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+    margin-top: 4px;
+}
+
+.price {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: medium;
+    font-size: 15px;
+    line-height: 21px;
+    color: #1D1D1D;
+    margin-top: 41px;
+}
+@media (min-width: 768px) {
+    .price {
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========== Page 2: END ============ */
+
+
 /* =========== Footer: START ============ */
 
 footer {
@@ -515,7 +687,7 @@ select {
     -webkit-appearance: searchfield;
     -moz-appearance: menulist-button;
     appearance: button;
-    background-image: url('static/icons/world.svg');
+    background-image: url('../icons/world.svg');
     background-position: 24px;
     background-repeat: no-repeat;
     width: 100%;
