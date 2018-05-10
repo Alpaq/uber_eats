@@ -4,40 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Uber Eats</title>
-    
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Roboto' >
-    <link rel="stylesheet" type="text/css" href="static/css/uber_eats.css" >
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" type="text/css" href="static/css/uber_eats.css">
 
 </head>
 
 <body>
 
     <header>
-        <div class="container containerHeader">
-            <div class="row" style="flex-wrap: unset">
-                <div class="boxLogoPosition" style="width: unset; flex: 653px;">
-                    <div class="boxLogo">
-                        <img class="logoHeader" src="static/icons/logo.svg">
-                    </div>
+        <div class="container">
+            <div class="containerHeader">
+                <div class="row" style="flex-wrap: unset">
+                    <div class="boxLogoPosition" style="width: unset; flex: 653px;">
+                        <div class="boxLogo">
+                            <img class="logoHeader" src="static/icons/logo.svg">
+                        </div>
 
-                    <div class="boxPosition">
-                        <button class="buttonAsap" type="button">ASAP</button>
-                        <span style="display:block;" class="to">to</span>
-                        <input class="searchBarAddress" name="search" placeholder="ul. Bolshaya Dmitrovka, 22" value="ul. Bolshaya Dmitrovka, 22"
-                            type="text">
+                        <div class="boxPosition">
+                            <button class="buttonAsap" type="button">ASAP</button>
+                            <span class="to">to</span>
+                            <input class="searchBarAddress" name="search" placeholder="ul. Bolshaya Dmitrovka, 22" value="ul. Bolshaya Dmitrovka, 22"
+                                type="text">
+                        </div>
                     </div>
-                </div>
-                <div class="boxButtons">
-                    <button class="buttonSignIn" type="button">Sign In</button>
-                    <button class="buttonRegister" type="button">Register</button>
-                    <img class="basket" src="static/icons/basket.svg" />
+                    <div class="boxButtons">
+                        <button class="buttonSignIn" type="button">Sign In</button>
+                        <button class="buttonRegister" type="button">Register</button>
+                        <img class="basket" src="static/icons/basket.svg" />
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="container containerMiddle">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-12">
                 <input class="searchBarRestaurant" type="text" name="search" placeholder="Search for restaurant or cuisine" />
@@ -119,89 +121,91 @@
     </div>
 
     <footer style="background-color: #262626">
-        <div class="container containerBottom">
-            <div class="footerA">
-                <img src="static/icons/logo_black.svg" />
-            </div>
+        <div class="container">
+            <div class="containerBottom">
+                <div class="footerA">
+                    <img src="static/icons/logo_black.svg" />
+                </div>
 
-            <div class="footerB">
-                <div class="row">
-                    <div class="col-xs-7 col-md-3 col-lg-3 ">
-                        <select>
-                            <option value="English ">ENGLISH</option>
-                            <option value="Russian ">RUSSIAN</option>
-                            <option value="Slovak">SLOVAK</option>
-                        </select>
-                        <p class="hashtagUbereats">
-                            <span class="hashtag">#</span>UberEats</p>
-                        <img src="static/icons/facebook-2.svg " />
-                        <img src="static/icons/twitter-1.svg " />
-                        <img src="static/icons/instagram-1.svg " />
-                    </div>
-                    <div class="hidden-xs col-md-1 col-lg-1">
-                    </div>
-                    <div class="hidden-xs col-md-4 col-lg-4 ">
-                        <p class="footerBText">About UberEats</p>
-                        <p class="footerBText">Become a Delivery Partner</p>
-                        <p class="footerBText">Become a Restaurant Partner</p>
-                    </div>
+                <div class="footerB">
+                    <div class="row">
+                        <div class="col-xs-7 col-md-3 col-lg-3 ">
+                            <select>
+                                <option value="English ">ENGLISH</option>
+                                <option value="Russian ">RUSSIAN</option>
+                                <option value="Slovak">SLOVAK</option>
+                            </select>
+                            <p class="hashtagUbereats">
+                                <span class="hashtag">#</span>UberEats</p>
+                            <img src="static/icons/facebook-2.svg " />
+                            <img src="static/icons/twitter-1.svg " />
+                            <img src="static/icons/instagram-1.svg " />
+                        </div>
+                        <div class="hidden-xs col-md-1 col-lg-1">
+                        </div>
+                        <div class="hidden-xs col-md-4 col-lg-4 ">
+                            <p class="footerBText">About UberEats</p>
+                            <p class="footerBText">Become a Delivery Partner</p>
+                            <p class="footerBText">Become a Restaurant Partner</p>
+                        </div>
 
-                    <div class="hidden-xs col-md-4 col-lg-4 ">
-                        <p class="footerBText">See all cities</p>
-                        <p class="footerBText">Pricing</p>
-                        <p class="footerBText">Help</p>
-                        <p class="footerBText">FAQs</p>
+                        <div class="hidden-xs col-md-4 col-lg-4 ">
+                            <p class="footerBText">See all cities</p>
+                            <p class="footerBText">Pricing</p>
+                            <p class="footerBText">Help</p>
+                            <p class="footerBText">FAQs</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="footerBMobile">
-                <p class="footerBText">About UberEats</p>
-                <p class="footerBText">Become a Delivery Partner</p>
-                <p class="footerBText">Become a Restaurant Partner</p>
-                <p class="footerBText">See all cities</p>
-                <p class="footerBText">Pricing</p>
-                <p class="footerBText">Help</p>
-                <p class="footerBText">FAQs</p>
-            </div>
+                <div class="footerBMobile">
+                    <p class="footerBText">About UberEats</p>
+                    <p class="footerBText">Become a Delivery Partner</p>
+                    <p class="footerBText">Become a Restaurant Partner</p>
+                    <p class="footerBText">See all cities</p>
+                    <p class="footerBText">Pricing</p>
+                    <p class="footerBText">Help</p>
+                    <p class="footerBText">FAQs</p>
+                </div>
 
-            <div class="footerC ">
-                <div class="row ">
-                    <div class="boxAppStore">
-                        <img class="appStore " src="static/icons/appStore.png " />
-                    </div>
-                    <div class="boxGooglePlay">
-                        <img class="googlePlay " src="static/icons/googlePlay.png " />
+                <div class="footerC ">
+                    <div class="row ">
+                        <div class="boxAppStore">
+                            <img class="appStore " src="static/icons/appStore.png " />
+                        </div>
+                        <div class="boxGooglePlay">
+                            <img class="googlePlay " src="static/icons/googlePlay.png " />
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="footerD ">
-                <div class="row ">
-                    <div class="hidden-xs col-md-4 col-lg-4 ">
-                        <p class="footerDText">&copy 2017 Uber Technologies Inc.</p>
-                    </div>
-                    <div class="hidden-xs col-md-4 col-lg-4 ">
-                        <p class="footerDText">Privacy</p>
-                    </div>
-                    <div class="hidden-xs col-md-4 col-lg-4 ">
-                        <p class="footerDText">Terms</p>
+                <div class="footerD ">
+                    <div class="row ">
+                        <div class="hidden-xs col-md-4 col-lg-4 ">
+                            <p class="footerDText">&copy 2017 Uber Technologies Inc.</p>
+                        </div>
+                        <div class="hidden-xs col-md-4 col-lg-4 ">
+                            <p class="footerDText">Privacy</p>
+                        </div>
+                        <div class="hidden-xs col-md-4 col-lg-4 ">
+                            <p class="footerDText">Terms</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="footerDMobile">
+                <div class="footerDMobile">
                     <p class="uberTechnologies">
                         &copy 2017 Uber Technologies Inc.
                     </p>
-                
+
                     <p>
                         Privacy
                     </p>
-                
+
                     <p class="terms">
                         Terms
-                    </p> 
+                    </p>
+                </div>
             </div>
         </div>
 

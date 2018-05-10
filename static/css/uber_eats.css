@@ -168,7 +168,7 @@ header {
 .boxLogo {
     width: 120px;
     margin-left: 8px;
-    margin-right: 46.22px;
+    margin-right: 25px;
 }
 
 @media (min-width: 768px) {
@@ -188,11 +188,11 @@ header {
     display: flex;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .boxLogoPosition {
         display: flex;
     }
-}
+} */
 
 .boxPosition {
     display: none;
@@ -488,7 +488,6 @@ img {
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
-    margin-bottom: 16px;
     color: #1D1D1D;
     margin-top: 4px;
     margin-bottom: 36px;
@@ -496,19 +495,53 @@ img {
 
 /* =========== Page 1: END ============ */
 
-
 /* =========== Page 2: START ============ */
 
+.imageTraktirPushkin {
+    background-image: url(../images/pushkin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position-y: -55.11px;
+    display: flex;
+}
 
+@media (min-width: 768px) {
+    .imageTraktirPushkin {
+        background-position: 0px 0px;  
+    }
+}
 
 .boxRestaurant {
-    width: 100%;
-    margin-top: 31px;
+    width: 308px;
+    height: 180px;
+    margin: 131px 4px 0px 0px;
+    border: 1px black solid;
+    background-color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .boxRestaurant {
+        width: 432px;
+        height: 204px;
+        margin: 80px 0px 80px 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    .boxRestaurant {
+        width: 389px;
+        height: 204px;
+        margin: 80px 0px 80px 8px;
+    }
 }
 
 ul {
     display: none;
 }
+
 @media (min-width: 768px) {
     ul {
         list-style-type: none;
@@ -516,6 +549,7 @@ ul {
         padding: 0;
         overflow: hidden;
         background-color: white;
+        border-bottom: 1px rgba(117, 117, 117, 0.2) solid;
     }
 }
 
@@ -527,8 +561,46 @@ li a {
     display: block;
     color: #626262;
     text-align: center;
-    padding: 14px 16px;
+    padding: 32px 40px 29px 0px;
     text-decoration: none;
+}
+
+.traktirPushkin {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: regular;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1D1D1D;
+    text-align: center;
+    padding-top: 0px;
+}
+
+@media (min-width: 768px) {
+    .traktirPushkin {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+.europe {
+    text-align: center;
+    color: #626262;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .europe {
+        text-align: left;
+        margin-left: 48px;
+    }
+}
+
+@media (min-width: 992px) {
+    .europe {
+        margin-left: 38px;
+    }
 }
 
 .buttonMinutes {
@@ -539,35 +611,32 @@ li a {
     padding-top: 9px;
     padding-left: 5px;
     padding-right: 5px;
+    margin-top: 16px;
+    margin-bottom: 0px;
     background-color: #262626;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     border: 1px solid #262626;
     border-radius: 16px;
     width: 98px;
-    /* height: 32px; */
+    height: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.boxRestaurant {
-    background-image: url('../images/pushkin.svg')
+@media (min-width: 768px) {
+    .buttonMinutes {
+        margin-left: 110px;
+        display: inline-block;
+       
+    }
 }
-
-.traktirPushkin {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: regular;
-    font-size: 24px;
-    line-height: 28px;
-    color: #1D1D1D;
-    text-align: center;
-}
-
-h4 {
-    text-align: center;
-    color: #626262;
-    font-size: 14px;
-    line-height: 16px;
+@media (min-width: 992px) {
+    .buttonMinutes {
+        margin-left: 100px;
+    }
 }
 
 .zakuski {
@@ -581,21 +650,31 @@ h4 {
     text-align: center;
 }
 
-.boxSnack {
-    border-bottom: 1 px #757575 solid;
+@media (min-width: 768px) {
+    .zakuski {
+        text-align: left;
+    }
 }
-.imageSnack {
-    /* float: right; */
+
+.boxSnack {
     
 }
 
+.imageSnack {
+    display: inline-block;
+}
+
 .snackName {
+    
+    justify-content: flex-start;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: regular;
     font-size: 14px;
     line-height: 24px;
     color: #1D1D1D;
+    margin: 0px;
 }
+
 @media (min-width: 768px) {
     .snackName {
         font-size: 16px;
@@ -609,7 +688,7 @@ h4 {
     font-size: 13px;
     line-height: 21px;
     color: #626262;
-    margin-top: 4px;
+    margin: 0px;
 }
 
 .price {
@@ -618,8 +697,9 @@ h4 {
     font-size: 15px;
     line-height: 21px;
     color: #1D1D1D;
-    margin-top: 41px;
+    margin: 0px;
 }
+
 @media (min-width: 768px) {
     .price {
         font-size: 15px;
@@ -627,42 +707,7 @@ h4 {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =========== Page 2: END ============ */
-
 
 /* =========== Footer: START ============ */
 
