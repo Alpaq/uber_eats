@@ -428,8 +428,7 @@ header {
     background-size: 16px 16px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 13px;
-    margin-top: 25px;
-    margin-bottom: 24px;
+    margin: 25px 0px 24px 0px;
     padding: 15px 20px 15px 30px;
     border-bottom: 1px solid #757575;
 }
@@ -563,6 +562,10 @@ li a {
     text-decoration: none;
 }
 
+li a:hover {
+    color: #327430;
+}
+
 .traktirPushkin {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: regular;
@@ -637,20 +640,31 @@ li a {
     }
 }
 
+.boxZakuski {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .boxZakuski {
+        justify-content: flex-start;
+    }
+}
+
 .zakuski {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: regular;
     font-size: 22px;
     line-height: 34px;
     color: #1D1D1D;
-    margin: 56px 118px 56px 118px;
-    padding-bottom: 12px;
-    border-bottom: 1px #757575 solid;
+    margin: 56px 0px 56px 0px;
+    /* border-bottom: 1px #757575 solid; */
 }
 
 @media (min-width: 768px) {
     .zakuski {
-        margin: 56px 0px 0px 0px;
+        margin: 56px 0px 32px 0px;
+        border-bottom: none;
     }
 }
 
@@ -660,20 +674,17 @@ li a {
 }
 
 .descriptionSnack {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
     border-bottom: 1px #757575 solid;
 }
 
 @media (min-width: 768px) {
     .descriptionSnack {
-        width: 552px;
         border: 1px rgba(117, 117, 117, 0.2) solid;
-    }
-}
-
-@media (min-width: 768px) {
-    .descriptionSnack {
-        width: 300px;
     }
 }
 
@@ -703,21 +714,18 @@ li a {
     font-size: 14px;
     line-height: 24px;
     color: #1D1D1D;
-    margin: 16px 0px 0px 0px;
+    margin: 0px;
 }
 
 @media (min-width: 768px) {
     .snackName {
         font-size: 16px;
-        line-height: 24px;
         margin: 16px 0px 0px 24px;
     }
 }
 
 @media (min-width: 992px) {
     .snackName {
-        font-size: 16px;
-        line-height: 24px;
         margin: 16px 0px 0px 16px;
     }
 }
@@ -727,18 +735,18 @@ li a {
     font-size: 13px;
     line-height: 21px;
     color: #626262;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 16px 0px;
 }
 
 @media (min-width: 768px) {
     .snackWith {
-    margin: 0px 0px 0px 24px;
+    margin: 0px 0px 58px 24px;
     }
 }
 
 @media (min-width: 992px) {
     .snackWith {
-    margin: 0px 0px 0px 16px;
+    margin: 0px 0px 58px 16px;
     }
 }
 
@@ -748,22 +756,20 @@ li a {
     font-size: 15px;
     line-height: 21px;
     color: #1D1D1D;
-    margin: 0px 0px 0px 0px;
-    /* display: flex;
-    align-items: flex-end; */
+    margin: 0px 0px 15px 0px;
 }
 
 @media (min-width: 768px) {
     .price {
         font-size: 15px;
         line-height: 21px;
-        margin: 0px 0px 0px 24px;
+        margin: 0px 0px 16px 24px;
     }
 }
 
 @media (min-width: 992px) {
     .price {
-        margin: 0px 0px 0px 16px;
+        margin: 0px 0px 16px 16px;
     }
 }
 
@@ -812,12 +818,12 @@ select:after {
 
 .footerB {
     margin-top: 39px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 
 .footerBMobile {
     margin-top: -15px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -895,9 +901,9 @@ p {
     color: #49A144;
 }
 
-h5 {
+/* h5 {
     font-size: 11px;
-}
+} */
 
 .uberTechnologies {
     margin-top: 40px;
@@ -907,6 +913,19 @@ h5 {
 .terms {
     margin-top: 24px;
     margin-bottom: 40px;
+}
+
+#buttonScroll {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 24px; /* Place the button at the bottom of the page */
+    right: 240px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #59BD5A; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
 }
 
 /* =========== Footer: END ============ */
