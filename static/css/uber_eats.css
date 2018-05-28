@@ -163,6 +163,7 @@
 
 header {
     box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+    
 }
 
 .boxLogo {
@@ -187,12 +188,6 @@ header {
     width: 150px;
     display: flex;
 }
-
-/* @media (min-width: 768px) {
-    .boxLogoPosition {
-        display: flex;
-    }
-} */
 
 .boxPosition {
     display: none;
@@ -266,7 +261,6 @@ header {
     background-color: white;
     color: #1D1D1D;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     border: 1px solid #e7e7e7;
     border-radius: 2px;
@@ -321,27 +315,19 @@ header {
     margin-bottom: 15px;
     line-height: 24px;
     radius: 16px;
-    offset: 0px, 0px;
     color: #1D1D1D;
     background-image: url('../icons/location.svg');
     background-position: 12px 11px;
     background-repeat: no-repeat;
-    padding: 8px 43px 8px 36px;
+    padding: 8px 12px 8px 36px;
     border: 1px solid #E0E0E0;
     height: 40px;
     width: 100%;
     box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-    .searchBarAddress {
-        padding: 8px 30px 8px 36px;
-    }
-}
-
 @media (min-width: 992px) {
     .searchBarAddress {
-        padding: 8px 72px 8px 36px;
         font-size: 16px;
         width: 292px;
     }
@@ -560,6 +546,7 @@ li a {
     text-align: center;
     padding: 32px 40px 29px 0px;
     text-decoration: none;
+    outline: 0;
 }
 
 li a:hover {
@@ -809,9 +796,9 @@ select {
     font-size: 13px;
 }
 
-select:after {
+select::after {
     content: "";
-    background-image: url('static/icons/arrow-select.svg');
+    background-image: url('../icons/arrow-select.svg');
     background-position: 151px;
     background-repeat: no-repeat;
 }
@@ -924,6 +911,10 @@ p {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: #59BD5A; /* Set a background color */
+    background-image: url ('../icons/arrow-2.svg');
+    background-position: 0px 15px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
 }
