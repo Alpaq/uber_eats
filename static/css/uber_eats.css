@@ -483,7 +483,7 @@ img {
 /* =========== Page 2: START ============ */
 
 .imageTraktirPushkin {
-    background-image: url(../images/pushkin.png);
+    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/images/pushkin.png');
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
