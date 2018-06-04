@@ -316,7 +316,7 @@ header {
     line-height: 24px;
     radius: 16px;
     color: #1D1D1D;
-    background-image: url('../icons/location.svg');
+    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/location.svg');
     background-position: 12px 11px;
     background-repeat: no-repeat;
     padding: 8px 12px 8px 36px;
@@ -408,7 +408,7 @@ header {
     width: 95%;
     border: none;
     color: #626262;
-    background-image: url('../icons/searchicon.svg');
+    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/searchicon.svg');
     background-position: 0px 15px;
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -785,7 +785,7 @@ select {
     -webkit-appearance: searchfield;
     -moz-appearance: menulist-button;
     appearance: button;
-    background-image: url('../icons/world.svg');
+    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/world.svg');
     background-position: 24px;
     background-repeat: no-repeat;
     width: 100%;
@@ -798,7 +798,7 @@ select {
 
 select::after {
     content: "";
-    background-image: url('../icons/arrow-select.svg');
+    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/arrow-select.svg');
     background-position: 151px;
     background-repeat: no-repeat;
 }
