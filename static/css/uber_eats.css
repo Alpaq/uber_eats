@@ -316,7 +316,7 @@ header {
     line-height: 24px;
     radius: 16px;
     color: #1D1D1D;
-    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/location.svg');
+    background-image: url('../icons/location.svg');
     background-position: 12px 11px;
     background-repeat: no-repeat;
     padding: 8px 12px 8px 36px;
@@ -408,7 +408,7 @@ header {
     width: 95%;
     border: none;
     color: #626262;
-    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/searchicon.svg');
+    background-image: url('../icons/searchicon.svg');
     background-position: 0px 15px;
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -483,7 +483,7 @@ img {
 /* =========== Page 2: START ============ */
 
 .imageTraktirPushkin {
-    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/images/pushkin.png');
+    background-image: url('../images/pushkin.png');
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -770,7 +770,7 @@ footer {
     background-color: #262626;
 }
 
-.footerA {
+.footerSection1 {
     padding-top: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid #FFFFFF;
@@ -785,7 +785,7 @@ select {
     -webkit-appearance: searchfield;
     -moz-appearance: menulist-button;
     appearance: button;
-    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/world.svg');
+    background-image: url('../icons/world.svg');
     background-position: 24px;
     background-repeat: no-repeat;
     width: 100%;
@@ -798,17 +798,17 @@ select {
 
 select::after {
     content: "";
-    background-image: url('https://raw.githubusercontent.com/Alpaq/uber_eats/master/static/icons/arrow-select.svg');
+    background-image: url('../icons/arrow-select.svg');
     background-position: 151px;
     background-repeat: no-repeat;
 }
 
-.footerB {
+.footerSection2 {
     margin-top: 39px;
     margin-bottom: 40px;
 }
 
-.footerBMobile {
+.footerSection2Mobile {
     margin-top: -15px;
     margin-bottom: 16px;
 }
@@ -819,7 +819,7 @@ select::after {
     }
 }
 
-.footerC {
+.footerSection3 {
     border-bottom: 1px solid #FFFFFF;
     border-top: 1px solid #FFFFFF;
 }
@@ -850,13 +850,13 @@ select::after {
 
 /* Opravit */
 
-.footerD {}
+.footerSection4 {}
 
 @media (min-width: 768px) {
     .footerD {}
 }
 
-.footerDMobile {
+.footerSection4Mobile {
     font-size: 11px;
 }
 
